@@ -1,6 +1,6 @@
-export const url = "localhost:3000"
-const scheme = "http://"
-const socketScheme = "ws://"
+export const url = location.host
+const scheme = location.protocol + '//'
+const socketScheme = location.protocol + '//'
 
 export const API_URL     = `${scheme}${url}`
 export const GRAPHQL_URL = `${API_URL}/api/graphql`
