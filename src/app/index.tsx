@@ -31,7 +31,7 @@ const App = observer(() => {
             </Switch>
           </Route>
 
-          <Redirect to="/299881420891881473" />
+          <Redirect to="/archives" />
         </Switch>
       </ThemeProvider>
     </Locale>
