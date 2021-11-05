@@ -324,7 +324,8 @@ class Message extends React.PureComponent<Props, any> {
                                 height={160}
                                 width={160}
                                 options={{
-                                  animationData: JSON.parse(s.lottieData)
+                                  // @ts-ignore options exists, its in the readme, it works, doesn't have typings, pr from august 2nd https://github.com/felippenardi/lottie-react-web/pull/53
+                                  path: '/api/sticker/' + s.id
                                 }}
                               />
                             </LottieStickerWrapper>
