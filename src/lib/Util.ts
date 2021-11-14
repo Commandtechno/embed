@@ -9,11 +9,11 @@ export class Util {
 	}
 
 	static craftServerUrl(snowflake: string, icon: string): string {
-		return `https://cdn.discordapp.com/icons/${snowflake}/${icon}.webp`
+		return icon
 	}
 
 	static craftBannerUrl(snowflake: string, banner: string) {
-		return `https://cdn.discordapp.com/banners/${snowflake}/${banner}.webp?size=512`
+		return banner
 	}
 
 	// https://github.com/discordjs/discord.js/blob/master/src/util/Snowflake.js#L35
